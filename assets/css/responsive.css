@@ -1,0 +1,134 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	
+    .mainmenu ul li a {
+        padding: 25px 15px;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.work-filter {
+        margin-bottom: 30px;
+    }
+    section#why-choose:after {
+        width: 40%;
+    }
+    .team-image img {
+        width: 100%;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+	.hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text h2 {
+        font-size: 25px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+    header#header {
+        padding: 10px 0;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: #fff;
+    }
+    .navbar .navbar-collapse {
+        max-height: 340px;
+        overflow: auto;
+        background: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        margin-top: 10px;
+    }
+    .sticky-header .navbar-light .navbar-toggler {
+        border-color: #333;
+    }
+    .sticky-header .navbar-light .navbar-toggler i.fa{
+       color: #333;
+    }
+    .sticky-header .mainmenu ul li a {
+        color: #fff !important;
+    }
+    div#navbarNav ul li a {
+        padding: 10px 0 !important;
+    }
+    .nav-pills .nav-link {
+        font-size: 14px;
+        padding: 10px 6px;
+    }
+    .section-title-heading h1 {
+        font-size: 25px;
+    }
+    .counter-item {
+        text-align: center;
+    }
+    section#why-choose:after {
+        position: inherit;
+    }
+    #alive-testimonial .owl-nav div{
+        display: none !important;
+    }
+    #alive-slider-area .owl-nav div {
+        left: 40px;
+    }
+    #alive-slider-area .owl-nav div.owl-next {
+        right: 40px;
+    }
+    .normal-header .navbar-light .navbar-toggler {
+        border-color: #333;
+    }
+    .normal-header button.navbar-toggler i.fa {
+        color: #333;
+    }
+    .normal-header .mainmenu ul li a {
+        color: #fff !important;
+    }
+    .single-work-box img {
+        width: 100%;
+    }
+    .team-image img {
+        width: 100%;
+    }
+
+    .blog-thumbni img {
+        width: 100%;
+    }
+    #alive-slider-area .owl-nav div {
+        display: none !important;
+    }
+    #why-choose:after {
+        display: none;
+    }
+    #why-choose .col-xl-6.col-xl-6.col-lg-6.col-md-7.pd-120px {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .work-filter {
+        margin-bottom: 30px;
+    }
+    .contact-info {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+        width: 450px
+    }
+}
