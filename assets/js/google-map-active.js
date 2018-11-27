@@ -5,7 +5,7 @@
     $(document).ready(function($) {          
          $('.map')
       .gmap3({
-        center:[40.718219, -74.007006],
+        center:[-34.6029959, -58.392677],
         zoom:11,
         mapTypeId: "shadeOfGrey", // to select it directly
         mapTypeControlOptions: {
@@ -13,7 +13,7 @@
         }
       })
         .marker({
-            position: [40.718219, -74.007006],
+            position: [-34.6029959,-58.392677 ],
           })
       .styledmaptype(
         "shadeOfGrey",
