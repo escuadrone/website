@@ -742,27 +742,39 @@ a.uppercase.alive-btn.slide-btn {
 }
 
 .purple-color {
-	background: #8e54e9;
+	background: #b95128;
 }
 
 .blue-color {
-	background: #4776e6;
+	background: #5150b1;
 }
 
 .orange-color {
-	background: #ff9600;
-}
-
-.green-lite-color {
 	background: #26ccca;
 }
 
-.pink-color {
-	background: #e6457b;
+.green-lite-color {
+	background: #e4aa0d;
 }
 
+.pink-color {
+	background: #e23e90;
+}
+.busqueda-color{
+	background: #1395e0
+}
+.audio-color{
+	background: #7856d4
+}
+.indus-color{
+	background: #e23b3b
+}
+
+.camp-color{
+	background: #085caa
+}
 .green-color {
-	background: #4bcc88;
+	background: #0b991e;
 }
 
 .single-service-box p {
