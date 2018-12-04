@@ -1441,3 +1441,26 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 	-webkit-transform: translateY(-50%) translateX(-50%);
 	transform: translateY(-50%) translateX(-50%);
 }
+
+#media-gallery a{
+	position: relative;
+}
+
+.playButton {
+	position: absolute;
+	top: 0;
+	left: 40%;
+	right: 0;
+	bottom: 0;
+	background-image: url('js/lightGallery/img/youtube-play.png');
+	width: 84px;
+	height: 60px;
+}
+
+.playButton{
+	background-position: 0 0;
+}
+
+.playButton:hover{
+	background-position: 0 60px;
+}

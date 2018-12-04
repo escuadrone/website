@@ -1,6 +1,5 @@
-   <!DOCTYPE html>
-<html lang="zxx">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
    <!-- Metas -->
     <meta charset="UTF-8">
@@ -38,6 +37,8 @@
     
     <!-- Responsice CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link type="text/css" rel="stylesheet" href="js/lightGallery/css/lightgallery.min.css" />
 </head>
 
 <body>
@@ -287,20 +288,37 @@
             </div>
             <div class="row">
 
-                    <div class="video-gallery">
-                        <a href="https://www.youtube.com/watch?v=N8Dgc4miIVo&list=PLTzM-BKg7RRVxxLBz1ONAGxPhEA5TFNuD&index=40&t=0s" data-poster="video-poster1.jpg" >
-                            <img src="img/thumb1.jpg" />
-                        </a>
-                    </div>
+                <div id="media-gallery">
+                    <a href="https://www.youtube.com/watch?v=tKF6XmyUzuk">
+                        <img src="https://img.youtube.com/vi/tKF6XmyUzuk/0.jpg" />
+                        <div class="playButton"></div>
+                    </a>
+                    <a href="img/drones-images-3525497_1920.jpg">
+                        <img src="img/drones-images-3525497_1920.jpg" />
+                    </a>
+                    <a href="img/drones-images-3525497_1920.jpg">
+                        <img src="img/drones-images-3525497_1920.jpg" />
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=FVNJFBI0b-g">
+                        <img src="https://img.youtube.com/vi/FVNJFBI0b-g/0.jpg" />
+                        <div class="playButton"></div>
+                    </a>
+                    <a href="img/drones-images-3525497_1920.jpg">
+                        <img src="img/drones-images-3525497_1920.jpg" />
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Pq9yPrLWMyU">
+                        <img src="https://img.youtube.com/vi/Pq9yPrLWMyU/0.jpg" />
+                        <div class="playButton"></div>
+                    </a>
+                    <a href="img/drones-images-3525497_1920.jpg">
+                        <img src="img/drones-images-3525497_1920.jpg" />
+                    </a>
+                </div>
 
             </div>    
         </div>
     </div>
     <!-- Recent Work Area End -->
-
-    <script>
-        $('.video-gallery').lightGallery(); 
-    </script>
 
     <!-- Google Map Start -->
     <div id="google-map" class="map">
@@ -460,6 +478,15 @@
     <script src="js/lightGallery/lib/lg-thumbnail.min.js"></script>
     <script src="js/lightGallery/lib/lg-fullscreen.min.js"></script>
     <script src="js/lightGallery/lib/lg-video.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#media-gallery').lightGallery({
+          loadYoutubeThumbnail: true,
+          youtubeThumbSize: 'default'
+        });
+      });
+    </script>
 
 </body>
 
