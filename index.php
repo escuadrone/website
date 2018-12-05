@@ -248,32 +248,34 @@ header('Content-Type: text/html');
 
     <!-- About Us area Start -->
     <div id="courses" class="pd-120px">
+        <div class="orange">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
                         <div class="section-title text-center mb-50px">
                             <div class="section-title-heading">
-                                <h2>CURSO DE CAPACITACION</h2> <br>
+                                <h2 class="white-color pdt-20px ">CURSO DE CAPACITACION</h2> <br>
                             </div>
                             <div class="section-title-content">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                                <p class="text-left">¡Marca la diferencia! Capacítate ahora en Capital Federal y rendí ante la ANAC en DronesVIP.<br>
-                                                     PRIMER CENTRO DE INSTRUCCIÓN AERONÁUTICA CERTIFICADO como CIAC III por la autoridad para el dictado de los cursos de operación de Drone.<br>
-                                                     Curso para operadores de drones para todo tipo de especialidad.<br>
-                                                    Clases teóricas y prácticas.<br>
-                                                Aprender a pilotear un drone le brinda un abanico de oportunidades laborales y de esparcimiento.<br><br>
-                                                Domicilio: <br> Viamonte 1536, Ciudad Autónoma de Buenos Aires <br> Tel. + 54 9 11.6634-7783</p>
-                                        </div>
-                                        <div class="col-md-4 text-center"><img class="img-fluid" src="img/drone.jpg" alt="logo"></div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p class="text-left white-color">¡Marca la diferencia! Capacítate ahora en Capital Federal y rendí ante la ANAC en DronesVIP.<br>
+                                            PRIMER CENTRO DE INSTRUCCIÓN AERONÁUTICA CERTIFICADO como CIAC III por la autoridad para el dictado de los cursos de operación de Drone.<br>
+                                            Curso para operadores de drones para todo tipo de especialidad.<br>
+                                            Clases teóricas y prácticas.<br>
+                                            Aprender a pilotear un drone le brinda un abanico de oportunidades laborales y de esparcimiento.<br><br>
+                                            Domicilio: <br> Viamonte 1536, Ciudad Autónoma de Buenos Aires <br> Tel. + 54 9 11.6634-7783</p>
                                     </div>
+                                    <div class="col-md-4 text-center"><img class="img-fluid" src="img/drone.jpg" alt="logo"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>   
-        </div>                                    
-        <!-- About Us Area End -->
+            </div>
+        </div>
+    </div>
+    <!-- About Us Area End -->
 
     <!-- Recent Work Area Start -->
     <div id="recent-work" class="pdt-120px pdb-90px">
@@ -284,8 +286,7 @@ header('Content-Type: text/html');
                         <div class="section-title-heading">
                             <h1>Nuestro Trabajo</h1>
                         </div>
-                        <div class="section-title-content">
-                            <p></p>
+                        <div class="sec">
                         </div>
                     </div>
                 </div>
@@ -295,9 +296,10 @@ header('Content-Type: text/html');
                 <div id="media-gallery">
 
                     <div class="row">
+
                         <div class="col-md-4">
-                            <a href="https://www.youtube.com/embed/WlVErbTMWN8">
-                                <img src="https://img.youtube.com/vi/WlVErbTMWN8/0.jpg" />
+                            <a href="https://www.youtube.com/watch?v=WlVErbTMWN8">
+                                <img src="https://www.youtube.com/watch?v=WlVErbTMWN8.jpg" />
                                 <div class="playButton"></div>
                             </a>
                         </div>
@@ -316,20 +318,38 @@ header('Content-Type: text/html');
 
                         <div class="col-md-4">
                             <a href="https://www.youtube.com/watch?v=N8Dgc4miIVo">
-                                <img src="https://www.youtube.com/watch?v=N8Dgc4miIVo/0.jpg" />
+                                <img src="https://www.youtube.com/watch?v=N8Dgc4miIVo.jpg" />
                                 <div class="playButton"></div>
                             </a>
                         </div>
 
                         <div class="col-md-4">
                             <a href="img/aerial-2178436_1920.jpg">
-                                <img src="img/aerial-2178436_1920.jpg" class="img-fluid" />
+                                <img src="img/aerial-2178436_1920.jpg" class="img-fluid" VSPACE="10" />
                             </a>
                         </div>
 
                         <div class="col-md-4">
                             <a href="img/aerial-2250937_1920.jpg">
                                 <img src="img/aerial-2250937_1920.jpg" class="img-fluid" />
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                                <a href="https://www.youtube.com/watch?v=ELb4Fqjk6Qw&feature=youtu.be">
+                                    <img src="https://www.youtube.com/watch?v=ELb4Fqjk6Qw&feature=youtu.be.jpg" />
+                                    <div class="playButton"></div>
+                                </a>
+                            </div>
+
+                        <div class="col-md-4">
+                            <a href="img/Casamiento.jpg">
+                                <img src="img/Casamiento.jpg" class="img-fluid" />
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="img/Casamiento 2.jpg">
+                                <img src="img/Casamiento 2.jpg" class="img-fluid"  VSPACE="10" />
                             </a>
                         </div>
 
