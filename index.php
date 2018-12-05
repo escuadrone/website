@@ -1,3 +1,7 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: text/html');
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -292,8 +296,8 @@
 
                     <div class="row">
                         <div class="col-md-4">
-                            <a href="https://www.youtube.com/watch?v=WlVErbTMWN8">
-                                <img src="https://www.youtube.com/watch?v=WlVErbTMWN8/0.jpg" />
+                            <a href="https://www.youtube.com/embed/WlVErbTMWN8">
+                                <img src="https://img.youtube.com/vi/WlVErbTMWN8/0.jpg" />
                                 <div class="playButton"></div>
                             </a>
                         </div>

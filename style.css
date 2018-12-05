@@ -1456,3 +1456,7 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 .playButton:hover{
 	background-position: 0 60px;
 }
+
+#media-gallery .row div {
+	margin-bottom: 20px;
+}
