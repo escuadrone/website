@@ -1474,13 +1474,28 @@ input.alive-btn.alive-btn-shadow.submit-btn {
     position: absolute;
     top: -56px;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
     border: 0;
+	width: 1920px !important;
+	height: 1080px !important;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .playButton {
         zoom: 0.5;
     }
+}
+
+@media only screen and (max-width: 768px) {
+
+	.resp-container {
+		position: static;
+	}
+
+	.resp-iframe{
+		width: 1200px !important;
+		height: 800px !important;
+	}
+
 }
