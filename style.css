@@ -1464,6 +1464,21 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 	padding-bottom: 20px;
 }
 
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: -56px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .playButton {
         zoom: 0.5;

@@ -101,9 +101,12 @@ header('Content-Type: text/html');
 
     <!-- Slider area Start -->
     <div id="video-area">
-       <video loop muted autoplay poster="#" class="video-background">
-          <source class="video-inicio" src="img/Crimea.mp4" type="video/mp4">
-       </video>
+
+        <div class="video-background">
+            <div class="resp-container">
+                <iframe style="width: 100%; height: 100%;" class="resp-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/e4WRGFyjz18?autoplay=1&controls=0&disablekb=1&loop=1&playlist=e4WRGFyjz18&modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
 
         <div class="alive-hero-item overlay-gradient">
             <div class="alive-hero-item-table">
