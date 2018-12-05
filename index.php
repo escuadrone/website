@@ -266,7 +266,7 @@ header('Content-Type: text/html');
                                             Aprender a pilotear un drone le brinda un abanico de oportunidades laborales y de esparcimiento.<br><br>
                                             Domicilio: <br> Viamonte 1536, Ciudad Autónoma de Buenos Aires <br> Tel. + 54 9 11.6634-7783</p>
                                     </div>
-                                    <div class="col-md-4 text-center"><img class="img-fluid" src="img/drone.jpg" alt="logo"></div>
+                                    <div class="col-md-4 text-center"><img class="img-fluid" src="img/drone_logo.png" alt="logo"></div>
                                 </div>
                             </div>
                         </div>
@@ -293,69 +293,70 @@ header('Content-Type: text/html');
             </div>
 
             <div class="container-fluid">
-                <div id="media-gallery">
 
-                    <div class="row">
 
-                        <div class="col-md-4">
+                    <ul id="media-gallery" class="list-unstyled row">
+
+                        <li class="col-md-4">
                             <a href="https://www.youtube.com/watch?v=WlVErbTMWN8">
-                                <img src="https://www.youtube.com/watch?v=WlVErbTMWN8.jpg" />
+                                <img src="img/video_1.jpg" class="img-fluid"/>
                                 <div class="playButton"></div>
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="col-md-4">
+                        <li class="col-md-4">
                             <a href="img/drones-images-3525497_1920.jpg">
                                 <img src="img/drones-images-3525497_1920.jpg" class="img-fluid" />
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="col-md-4">
+                        <li class="col-md-4">
                             <a href="img/nature-3147723_1920.jpg">
                                 <img src="img/nature-3147723_1920.jpg" class="img-fluid" />
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="col-md-4">
+                        <li class="col-md-4">
                             <a href="https://www.youtube.com/watch?v=N8Dgc4miIVo">
-                                <img src="https://www.youtube.com/watch?v=N8Dgc4miIVo.jpg" />
+                                <img src="img/video_2.jpg" />
                                 <div class="playButton"></div>
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="col-md-4">
+                        <li class="col-md-4">
                             <a href="img/aerial-2178436_1920.jpg">
                                 <img src="img/aerial-2178436_1920.jpg" class="img-fluid" VSPACE="10" />
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="col-md-4">
+                        <li class="col-md-4">
                             <a href="img/aerial-2250937_1920.jpg">
                                 <img src="img/aerial-2250937_1920.jpg" class="img-fluid" />
                             </a>
-                        </div>
+                        </li>
 
-                        <div class="col-md-4">
+                        <li class="col-md-4">
                                 <a href="https://www.youtube.com/watch?v=ELb4Fqjk6Qw&feature=youtu.be">
-                                    <img src="https://www.youtube.com/watch?v=ELb4Fqjk6Qw&feature=youtu.be.jpg" />
+                                    <img src="img/video_3.jpg" />
                                     <div class="playButton"></div>
                                 </a>
-                            </div>
+                            </li>
 
-                        <div class="col-md-4">
+                        <li class="col-md-4">
                             <a href="img/Casamiento.jpg">
                                 <img src="img/Casamiento.jpg" class="img-fluid" />
                             </a>
-                        </div>
-                        <div class="col-md-4">
+                        </li>
+
+                        <li class="col-md-4">
                             <a href="img/Casamiento 2.jpg">
-                                <img src="img/Casamiento 2.jpg" class="img-fluid"  VSPACE="10" />
+                                <img src="img/Casamiento 2.jpg" class="img-fluid" />
                             </a>
-                        </div>
+                        </li>
 
-                    </div>
+                    </ul>
 
-                </div>
+
             </div>
         </div>
     </div>
@@ -523,6 +524,7 @@ header('Content-Type: text/html');
     <script>
       $(document).ready(function(){
         $('#media-gallery').lightGallery({
+          selector: 'a',
           loadYoutubeThumbnail: true,
           youtubeThumbSize: 'default'
         });

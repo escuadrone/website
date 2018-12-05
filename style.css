@@ -1443,7 +1443,7 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 
 .playButton {
 	position: absolute;
-	top: 0;
+	top: -80%;
 	left: 40%;
 	right: 0;
 	bottom: 0;
@@ -1460,6 +1460,12 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 	background-position: 0 60px;
 }
 
-#media-gallery .row div {
-	margin-bottom: 20px;
+#media-gallery.row li {
+	padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .playButton {
+        zoom: 0.5;
+    }
 }
