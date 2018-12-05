@@ -1481,6 +1481,10 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 	height: 1080px !important;
 }
 
+/*#video-area {
+	background-image: url('img/homebg.jpg');
+}*/
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .playButton {
         zoom: 0.5;
