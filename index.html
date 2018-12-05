@@ -392,31 +392,38 @@
                                 </div>
                             </div>
                             <div class="contact-form">
-                                <form action="index.html" method="post">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="form-message"></div>
+                                    </div>
+                                </div>
+
+                                <form action="form.php" class="contact-form" id="contact-form" method="post">
                                     <div class="row">
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="exampleInputname"  placeholder="Nombre">
+                                                <input type="text" class="form-control" name="name" placeholder="Nombre" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="form-group">
-                                                <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Tu Email">
+                                                <input type="text" class="form-control" name="last_name" placeholder="Apellido" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="form-group">
-                                                <input type="url" class="form-control" id="exampleInputwebsite"  placeholder="Tu sitio web">
+                                                <input type="email" class="form-control" name="email" placeholder="E-mail" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="exampleInputsubject"  placeholder="Tema">
+                                                <input type="text" class="form-control" name="phone" placeholder="Teléfono" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-12 col-lg-12">
                                             <div class="form-group">
-                                                <textarea placeholder="Comentario" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                <textarea placeholder="Comentario" class="form-control" name="comments" rows="3" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-xl-12 col-lg-12">
@@ -526,6 +533,27 @@
           selector: 'a',
           loadYoutubeThumbnail: true,
           youtubeThumbSize: 'default'
+        });
+      });
+    </script>
+
+    <script>
+      $('#contact-form').submit(function(){
+        event.preventDefault();
+        $('#submit-button').hide();
+        $.ajax({
+          type: "POST",
+          url: "form.php",
+          data: $("#contact-form").serialize(),
+          success : function(text){
+            if (text == "OK"){
+              $("#contact-form").hide();
+              $('#form-message').removeClass('text-danger').addClass('text-success').html('Mensaje enviado. Muchas gracias.');
+            } else {
+              $('#form-message').removeClass('text-success').addClass('text-danger').html(text);
+              $('#submit-button').show();
+            }
+          }
         });
       });
     </script>
