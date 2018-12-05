@@ -26,7 +26,6 @@ $Body .= "Nombre: ";
 $Body .= $_POST["name"];
 $Body .= "\n";
 
-$Body = "";
 $Body .= "Apellido: ";
 $Body .= $_POST["last_name"];
 $Body .= "\n";
@@ -63,8 +62,8 @@ try {
 
     //Recipients
     $mail->setFrom('contacto@escuadrone.com.ar', 'Escuadrone');
-    //$mail->addAddress('contacto@escuadrone.com.ar', 'Escuadrone');     // Add a recipient     // Name is optional
-    $mail->addAddress('maxinuss@gmail.com', 'Escuadrone');     // Add a recipient     // Name is optional
+    $mail->addAddress('contacto@escuadrone.com.ar', 'Escuadrone');     // Add a recipient     // Name is optional
+    //$mail->addAddress('maxinuss@gmail.com', 'Escuadrone');     // Add a recipient     // Name is optional
     $mail->addReplyTo($email, $name);
 
     //Content
