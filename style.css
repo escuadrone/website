@@ -1464,26 +1464,43 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 	padding-bottom: 20px;
 }
 
+.bg-container {
+    /*background-image: url('img/homebg.jpg');
+    background-size: cover;*/
+    position: relative;
+    z-index: 1;
+    margin-top: -64px;
+}
+
 .resp-container {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
+    height: 100vh;
 }
 
-.resp-iframe {
+/*.resp-iframe {
     position: absolute;
     top: -56px;
     left: 0;
-    /*width: 100%;
-    height: 100%;*/
     border: 0;
 	width: 1920px !important;
 	height: 1080px !important;
+}*/
+
+#player{
+    position: relative;
+    background: transparent;
 }
 
-/*#video-area {
-	background-image: url('img/homebg.jpg');
-}*/
+.ytplayer-container{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+/*#player .ytplayer-container { display: none; }*/
+/*#player.loaded .ytplayer-container{ background: transparent; opacity: 1; }*%
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .playButton {
