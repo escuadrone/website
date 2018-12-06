@@ -1267,14 +1267,17 @@ a.uppercase.alive-btn.slide-btn {
 }
 
 .contact-info {
-	background: -webkit-linear-gradient(top, #c0c3c9, rgb(131, 130, 133));
-	background: linear-gradient(to bottom, #c5c8ce, rgb(130, 129, 133));
-	padding: 50px;
+    background: -webkit-linear-gradient(top, #517bdf, #8e54e9);
+    background: linear-gradient(to bottom, #517bdf, #8e54e9);
+    padding: 30px;
 }
+
 
 .contact-info p {
 	font-size: 16px;
 	line-height: 24px;
+    color: yellow !important;
+    word-break: break-word;
 }
 
 .contact-info p:last-child {
@@ -1483,6 +1486,10 @@ input.alive-btn.alive-btn-shadow.submit-btn {
     max-width: 100% !important;
 }
 
+#player {
+    height: 100vh !important;
+}
+
 /*.resp-iframe {
     position: absolute;
     top: -56px;
@@ -1515,9 +1522,9 @@ input.alive-btn.alive-btn-shadow.submit-btn {
 
 @media only screen and (max-width: 768px) {
 
-	.resp-container {
-		position: static;
-	}
+	#player {
+        overflow: auto !important;
+    }
 
 	/*.resp-iframe{
 		width: 1300px !important;
