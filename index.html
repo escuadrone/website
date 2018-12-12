@@ -589,9 +589,7 @@
       var ua = navigator.userAgent.toLowerCase();
       var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
       if(isAndroid) {
-        video.addEventListener('click',function(){
-          video.play();
-        },false);
+        $('#videoBg').attr('poster', 'videos/Crimea.gif');
       }
 
       $(document).ready(function(){
