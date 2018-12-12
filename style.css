@@ -1280,6 +1280,11 @@ a.uppercase.alive-btn.slide-btn {
     word-break: break-word;
 }
 
+.contact-info a i,
+.contact-info a{
+	color: yellow !important;
+}
+
 .contact-info p:last-child {
 	margin-bottom: 0;
 }
