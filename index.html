@@ -103,7 +103,7 @@
     <!-- Slider area Start -->
     <div id="video-area">
 
-        <video loop muted autoplay poster="#" class="video-background">
+        <video loop muted autoplay poster="img/homebg.jpg" class="video-background" id="videoBg">
             <source src="videos/Crimea.mp4" type="video/mp4">
             <source src="videos/Crimea.ogg" type="video/ogg">
             <source src="videos/Crimea.webm" type="video/webm">
@@ -559,64 +559,16 @@
     <script src="js/YTPlayer/jquery.mb.YTPlayer.min.js"></script>
 
     <script>
-      jQuery(function(){
-        jQuery("#player").YTPlayer();
-      });
+      var video = document.getElementById("videoBg");
 
-      /*var videstart = function() {
-        var tag = document.createElement('script');
+      setInterval(function (){
+        var current_time = video.currentTime;
 
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        $('#player').YTPlayer({
-          fitToBackground: true,
-          videoId: 'e4WRGFyjz18',
-          pauseOnScroll: false,
-          start: 1,
-          mute: true,
-          playerVars: {
-            modestbranding: 1,
-            autohide: 1,
-            autoplay: 1,
-            controls: 0,
-            showinfo: 0,
-            wmode: 'transparent',
-            branding: 0,
-            rel: 0,
-            origin: window.location.origin,
-            disablekb: 1,
-            fs: 0,
-            enablejsapi: 1,
-          },
-          callback: function(event) {
-            videoCallbackEvents(event);
-          }
-        });
-
-        var videoCallbackEvents = function(event) {
-          var player = $('#player').data('ytPlayer').player;
-
-          var interval_is_stopped = false;
-          setInterval(function (event){
-            var current_time = player.getCurrentTime();
-
-            if (current_time > 15 && !interval_is_stopped) {
-              interval_is_stopped = true;
-              jQuery('#player').fadeTo(400, 1, function(){
-                player.seekTo(1);
-                jQuery(this).fadeTo(400, 1, function(){
-                  interval_is_stopped = false;
-                });
-              });
-            }
-          }, 10);
-        };
-      };
-
-      videstart();
-      */
+        if (current_time > 15) {
+          video.currentTime = 1;
+          video.play();
+        }
+      }, 100, video);
 
       $(document).ready(function(){
         $('#media-gallery').lightGallery({

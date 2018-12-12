@@ -1490,6 +1490,11 @@ input.alive-btn.alive-btn-shadow.submit-btn {
     height: 100vh !important;
 }
 
+video::-webkit-media-controls-start-playback-button {
+	display: none;
+}
+
+
 /*.resp-iframe {
     position: absolute;
     top: -56px;
