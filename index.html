@@ -108,7 +108,7 @@
 
         <video loop muted autoplay poster="img/homebg.jpg" class="video-background" id="videoBg">
             <source src="videos/Crimea.mp4" type="video/mp4">
-            <source src="videos/Crimea.ogg" type="video/ogg">
+            <source src="videos/Crimea.ogv" type="video/ogg">
             <source src="videos/Crimea.webm" type="video/webm">
         </video>
 
@@ -585,6 +585,14 @@
           video.play();
         }
       }, 100, video);
+
+      var ua = navigator.userAgent.toLowerCase();
+      var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+      if(isAndroid) {
+        video.addEventListener('click',function(){
+          video.play();
+        },false);
+      }
 
       $(document).ready(function(){
         $('#media-gallery').lightGallery({
