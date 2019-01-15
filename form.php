@@ -30,6 +30,10 @@ $Body .= "Apellido: ";
 $Body .= $_POST["last_name"];
 $Body .= "\n";
 
+$Body .= "Teléfono: ";
+$Body .= $_POST["phone"];
+$Body .= "\n";
+
 $Body .= "E-mail: ";
 $Body .= $_POST["email"];
 $Body .= "\n";
