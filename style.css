@@ -261,7 +261,7 @@ label {
 }
 
 .alive-btn {
-	background: #fff;
+	background: #F3F3F3;
 	display: inline-block;
 	padding: 8px 45px;
 	border-radius: 30px;
@@ -1300,6 +1300,7 @@ a.uppercase.alive-btn.slide-btn {
 	border-radius: 0;
 	border-color: #e5e5e5;
 	color: #666666;
+    padding: 0 !important;
 }
 .submit-btn{
     margin-bottom: 0;
