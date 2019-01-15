@@ -732,6 +732,10 @@ a.uppercase.alive-btn.slide-btn {
 	margin-bottom: 25px;
 }
 
+.fleet-box {
+	min-height: 600px;
+}
+
 .purple-color {
 	background: #b95128;
 }
