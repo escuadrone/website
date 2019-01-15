@@ -41,8 +41,12 @@ body {
 	color: #666666
 }
 .logo{
-	width: 99px;
-	margin: 9px;
+	width: 150px;
+	padding: 10px;
+}
+
+.mainmenu {
+	padding-top: 15px;
 }
 
 .logo2{
@@ -469,18 +473,9 @@ header#header {
 	display: block;
 }
 
-.logo {
-	margin-top: 18px;
-}
-
 .logo h1 a {
 	color: #fff;
 }
-
-.logo h1 {
-	margin: 0px;
-}
-
 
 /*3.Slider  CSS*/
 
