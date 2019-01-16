@@ -659,7 +659,25 @@
     <script>
         var ua = navigator.userAgent.toLowerCase();
         var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-        if(isAndroid) {
+        var isMobile = ua.indexOf("mobile") > -1; //&& ua.indexOf("mobile");
+        var isIphone = false;
+
+        var iDevices = [
+          'iPad Simulator',
+          'iPhone Simulator',
+          'iPod Simulator',
+          'iPad',
+          'iPhone',
+          'iPod'
+        ];
+
+        if (!!navigator.platform) {
+          while (iDevices.length) {
+            if (navigator.platform === iDevices.pop()){ isIphone = true ; }
+          }
+        }
+
+        if(isAndroid || isIphone || isMobile) {
             $('#videoBg').remove();
             $('#video-area').attr('style', 'background-image: url(img/homebg.jpg); background-size: cover; ');
         } else {
