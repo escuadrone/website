@@ -657,22 +657,23 @@
     <script src="js/YTPlayer/jquery.mb.YTPlayer.min.js"></script>
 
     <script>
-      var video = document.getElementById("videoBg");
+        var ua = navigator.userAgent.toLowerCase();
+        var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+        if(isAndroid) {
+            $('#videoBg').remove();
+            $('#video-area').attr('style', 'background-image: url(img/homebg.jpg); background-size: cover; ');
+        } else {
+            var video = document.getElementById("videoBg");
 
-      setInterval(function (){
-        var current_time = video.currentTime;
+            setInterval(function (){
+            var current_time = video.currentTime;
 
-        if (current_time > 15) {
-          video.currentTime = 1;
-          video.play();
+            if (current_time > 15) {
+              video.currentTime = 1;
+              video.play();
+            }
+            }, 100, video);
         }
-      }, 100, video);
-
-      var ua = navigator.userAgent.toLowerCase();
-      var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-      if(isAndroid) {
-        $('#videoBg').attr('poster', 'img/homebg.jpg');
-      }
 
       $(document).ready(function(){
         $('#media-gallery').lightGallery({
